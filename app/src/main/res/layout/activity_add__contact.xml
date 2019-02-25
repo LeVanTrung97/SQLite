@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Contact">
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:textColor="#f90000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="ADD OR UPDATE"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="30sp"
+        android:hint="Enter a name" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+
+        android:layout_below="@id/edtName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Enter a phonenumber"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnCancel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="129dp"
+        android:text="Cancel" />
+
+</RelativeLayout>
